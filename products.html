@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Collections | Asnani Footwear, Nagpur</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Browse formal leather shoes, sneakers, loafers, boots, heels and sandals for men and women at Asnani Footwear, Nagpur. Enquire on WhatsApp for sizes and prices.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Collections | Asnani Footwear, Nagpur">
+<meta property="og:description" content="Browse formal leather shoes, sneakers, loafers, boots, heels and sandals for men and women at Asnani Footwear, Nagpur. Enquire on WhatsApp for sizes and prices.">
+<meta property="og:image" content="assets/images/placeholders/cta-bg.jpg">
+<meta name="theme-color" content="#241A17">
+<link rel="icon" type="image/png" href="assets/images/asnani-logo.png">
+
+<!-- Fonts: Playfair Display (headings), Inter (body), Cormorant Garamond (accent) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap">
+
+<!-- Tailwind CSS (CDN, prototype only — swap for a compiled build in production) -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = {
+    corePlugins: { preflight: true },
+    theme: {
+      extend: {
+        colors: {
+          espresso: "#241A17", brown: "#39271F", tan: "#B68A5A", gold: "#C6A46A",
+          cream: "#F8F5EF", beige: "#EDE5DA", warmgrey: "#8B8580", ink: "#191716",
+          muted: "#5F5751", "tan-deep": "#8A6740", line: "#E3D9CB"
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', '"Cormorant Garamond"', "Georgia", "serif"],
+          accent: ['"Cormorant Garamond"', "Georgia", "serif"],
+          sans: ["Inter", "system-ui", "-apple-system", '"Segoe UI"', "Roboto", "sans-serif"]
+        }
+      }
+    }
+  };
+</script>
+
+<!-- Shared design system (header, footer, buttons, cards, tokens) -->
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="products">
+
+<!-- ======================================================================
+     ICON SPRITE (Lucide-style outlines + brand glyphs). Reuse on every page.
+     ====================================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-footprints" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================================================================
+     SHARED: ANNOUNCEMENT BAR  (copy unchanged to every page)
+     ====================================================================== -->
+<div class="announce" role="region" aria-label="Store announcements">
+  <div class="announce__track">
+    <p class="announce__msg is-active">Step Into Style<span class="sep" aria-hidden="true">|</span>Quality Footwear for Every Occasion</p>
+    <p class="announce__msg" aria-hidden="true">Discover Your Perfect Pair</p>
+    <p class="announce__msg" aria-hidden="true">Style Meets Comfort at Asnani Footwear</p>
+    <p class="announce__msg" aria-hidden="true">Pan-India Shipping Available</p>
+  </div>
+</div>
+
+<!-- ======================================================================
+     SHARED: HEADER & NAVIGATION  (copy unchanged to every page —
+     main.js highlights the current page automatically)
+     ====================================================================== -->
+<header class="site-header">
+  <div class="wrap flex items-center justify-between gap-6 h-[76px] lg:h-[84px]">
+    <!-- Official AF mark (assets/images/asnani-logo.png) with the wordmark beside it -->
+    <a href="index.html" class="logo-lockup" aria-label="Asnani Footwear — home">
+      <img src="assets/images/asnani-logo.png" alt="" class="logo-mark" width="174" height="100">
+      <span class="logo" aria-hidden="true">
+        <span class="logo__name">ASNANI</span>
+        <span class="logo__sub">FOOTWEAR</span>
+      </span>
+    </a>
+
+    <nav aria-label="Main" class="hidden lg:block">
+      <ul class="flex items-center gap-9">
+        <li><a class="nav-link" data-nav href="index.html">Home</a></li>
+        <li><a class="nav-link" data-nav href="about.html">About Us</a></li>
+        <li><a class="nav-link" data-nav href="products.html" aria-current="page">Collections</a></li>
+        <li><a class="nav-link" data-nav href="gallery.html">Lookbook</a></li>
+        <li><a class="nav-link" data-nav href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="products.html" class="btn btn-primary btn-sm">Shop Now</a>
+      <button type="button" class="menu-toggle lg:hidden" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile slide-down navigation -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden">
+    <div class="mobile-menu__inner">
+      <nav aria-label="Mobile" class="wrap pb-6 pt-2">
+        <a class="m-link" data-nav href="index.html">Home <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="about.html">About Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="products.html" aria-current="page">Collections <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="gallery.html">Lookbook <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="contact.html">Contact <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="products.html" class="btn btn-primary w-full mt-6">Shop Now <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ====================================================================
+       PAGE HERO
+       ==================================================================== -->
+  <section class="page-hero page-hero--compact" aria-labelledby="page-title">
+    <div class="page-hero__media">
+      <!-- Temporary Unsplash image. Replace with assets/images/brand/collection-hero.jpg -->
+      <img src="assets/images/placeholders/cta-bg.jpg" alt="Dark suede lace-up boots photographed against a black background" width="1800" height="900" fetchpriority="high">
+    </div>
+    <div class="wrap page-hero__inner">
+      <nav aria-label="Breadcrumb" class="rise rise-1">
+        <ol class="breadcrumb">
+          <li><a href="index.html">Home</a></li>
+          <li><span aria-current="page">Collections</span></li>
+        </ol>
+      </nav>
+      <h1 id="page-title" class="page-hero__title mt-6 max-w-3xl rise rise-2">The <em>Collection</em></h1>
+      <p class="hero__lede mt-5 rise rise-3">Formal leather, sneakers, loafers, boots, heels and more for men and women. Choose a style you like and message us for sizes, availability and price.</p>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FILTERS (sticky below the header)
+       ==================================================================== -->
+  <div class="filter-bar">
+    <div class="wrap py-3 flex flex-col gap-3">
+      <div class="chip-scroll min-w-0" role="group" aria-label="Filter by category">
+        <ul class="chip-list">
+              <li><button type="button" class="chip" data-filter-cat="all" aria-pressed="true">All Styles</button></li>
+              <li><button type="button" class="chip" data-filter-cat="formal" aria-pressed="false">Formal Leather</button></li>
+              <li><button type="button" class="chip" data-filter-cat="sneakers" aria-pressed="false">Casual &amp; Sneakers</button></li>
+              <li><button type="button" class="chip" data-filter-cat="loafers" aria-pressed="false">Loafers</button></li>
+              <li><button type="button" class="chip" data-filter-cat="ethnic" aria-pressed="false">Ethnic</button></li>
+              <li><button type="button" class="chip" data-filter-cat="boots" aria-pressed="false">Boots</button></li>
+              <li><button type="button" class="chip" data-filter-cat="heels" aria-pressed="false">Heels</button></li>
+              <li><button type="button" class="chip" data-filter-cat="sandals" aria-pressed="false">Sandals &amp; Slippers</button></li>
+        </ul>
+      </div>
+      <div class="flex flex-col min-[520px]:flex-row min-[520px]:items-center gap-3">
+        <div class="segmented self-start" role="group" aria-label="Filter by who it's for">
+          <button type="button" data-filter-for="all" aria-pressed="true">All</button>
+          <button type="button" data-filter-for="men" aria-pressed="false">Men</button>
+          <button type="button" data-filter-for="women" aria-pressed="false">Women</button>
+        </div>
+        <div class="search flex-1 lg:flex-none lg:w-72">
+          <label for="catalog-search" class="sr-only">Search styles</label>
+          <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+          <input id="catalog-search" type="search" placeholder="Search styles" autocomplete="off">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ====================================================================
+       CATALOG GRID
+       Sample listings only: names describe the style shown in each temporary
+       photo. Prices, sizes and stock are confirmed on WhatsApp, so none are
+       listed here. To add a product, copy one <article> and change its
+       data-category (formal, sneakers, loafers, ethnic, boots, heels, sandals),
+       data-for (men, women or unisex), name, label and image.
+       ==================================================================== -->
+  <section class="bg-cream pt-8 pb-20 md:pb-28" aria-labelledby="catalog-title">
+    <div class="wrap">
+      <h2 id="catalog-title" class="sr-only">Footwear styles</h2>
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 mb-6">
+        <p class="text-sm font-medium text-espresso tabular-nums" data-catalog-count aria-live="polite">Showing 18 styles</p>
+        <p class="notice max-w-xl"><span aria-hidden="true" class="text-tan-deep font-semibold">i</span><span>Sample listings with temporary photos. The range in store changes often, so message us for current styles, sizes and prices.</span></p>
+      </div>
+
+      <div class="catalog-grid" data-catalog>
+        <!-- Sample listing — replace image with assets/images/products/classic-leather-derby-shoes.jpg -->
+        <article class="product-card zoom-parent" data-category="formal" data-for="men" data-name="Classic Leather Derby Shoes Men · Formal">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/product-formal.jpg" alt="Polished tan leather derby shoes on wooden flooring" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Formal</span>
+            <h3 class="product-card__name">Classic Leather Derby Shoes</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Classic Leather Derby Shoes" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Classic Leather Derby Shoes on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/wingtip-leather-brogues.jpg -->
+        <article class="product-card zoom-parent" data-category="formal" data-for="men" data-name="Wingtip Leather Brogues Men · Formal">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/cat-formal.jpg" alt="Brown leather brogue shoes with wingtip detailing, seen from above" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Formal</span>
+            <h3 class="product-card__name">Wingtip Leather Brogues</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Wingtip Leather Brogues" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Wingtip Leather Brogues on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/double-monk-strap-shoes.jpg -->
+        <article class="product-card zoom-parent" data-category="formal" data-for="men" data-name="Double Monk-Strap Shoes Men · Formal">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/hero.jpg" alt="Brown leather double monk-strap shoes on a wooden floor in low light" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Formal</span>
+            <h3 class="product-card__name">Double Monk-Strap Shoes</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Double Monk-Strap Shoes" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Double Monk-Strap Shoes on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/horsebit-leather-loafers.jpg -->
+        <article class="product-card zoom-parent" data-category="loafers" data-for="men" data-name="Horsebit Leather Loafers Men · Loafers">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/product-loafers.jpg" alt="Cognac leather horsebit loafers on a dark blue backdrop" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Loafers</span>
+            <h3 class="product-card__name">Horsebit Leather Loafers</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Horsebit Leather Loafers" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Horsebit Leather Loafers on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/suede-brogue-slip-ons.jpg -->
+        <article class="product-card zoom-parent" data-category="loafers" data-for="men" data-name="Suede Brogue Slip-Ons Men · Loafers">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/cat-ethnic-loafers.jpg" alt="Teal suede slip-on shoe with brogue detailing on a soft pastel set" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Loafers</span>
+            <h3 class="product-card__name">Suede Brogue Slip-Ons</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Suede Brogue Slip-Ons" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Suede Brogue Slip-Ons on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/everyday-knit-sneakers.jpg -->
+        <article class="product-card zoom-parent" data-category="sneakers" data-for="unisex" data-name="Everyday Knit Sneakers Unisex · Sneakers">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/product-sneakers.jpg" alt="Black knit running-style sneaker on a plain white background" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Unisex &middot; Sneakers</span>
+            <h3 class="product-card__name">Everyday Knit Sneakers</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Everyday Knit Sneakers" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Everyday Knit Sneakers on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/two-tone-casual-sneakers.jpg -->
+        <article class="product-card zoom-parent" data-category="sneakers" data-for="unisex" data-name="Two-Tone Casual Sneakers Unisex · Casual">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/cat-casual.jpg" alt="White and tan casual sneaker against a warm orange backdrop" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Unisex &middot; Casual</span>
+            <h3 class="product-card__name">Two-Tone Casual Sneakers</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Two-Tone Casual Sneakers" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Two-Tone Casual Sneakers on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/classic-white-sneakers.jpg -->
+        <article class="product-card zoom-parent" data-category="sneakers" data-for="unisex" data-name="Classic White Sneakers Unisex · Sneakers">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-09.jpg" alt="Pair of white low-top sneakers on a black background" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Unisex &middot; Sneakers</span>
+            <h3 class="product-card__name">Classic White Sneakers</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Classic White Sneakers" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Classic White Sneakers on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/street-mesh-sneakers.jpg -->
+        <article class="product-card zoom-parent" data-category="sneakers" data-for="unisex" data-name="Street Mesh Sneakers Unisex · Sneakers">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-08.jpg" alt="White mesh sneaker worn on a city street" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Unisex &middot; Sneakers</span>
+            <h3 class="product-card__name">Street Mesh Sneakers</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Street Mesh Sneakers" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Street Mesh Sneakers on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/leather-lace-up-boots.jpg -->
+        <article class="product-card zoom-parent" data-category="boots" data-for="men" data-name="Leather Lace-Up Boots Men · Boots">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/cat-boots.jpg" alt="Pair of dark brown leather lace-up boots on a light surface" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Boots</span>
+            <h3 class="product-card__name">Leather Lace-Up Boots</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Leather Lace-Up Boots" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Leather Lace-Up Boots on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/rugged-work-boots.jpg -->
+        <article class="product-card zoom-parent" data-category="boots" data-for="men" data-name="Rugged Work Boots Men · Boots">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-02.jpg" alt="Tan leather lace-up work boots worn outdoors" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Men &middot; Boots</span>
+            <h3 class="product-card__name">Rugged Work Boots</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Rugged Work Boots" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Rugged Work Boots on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/pointed-stiletto-heels.jpg -->
+        <article class="product-card zoom-parent" data-category="heels" data-for="women" data-name="Pointed Stiletto Heels Women · Heels">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/product-women.jpg" alt="Woman wearing black pointed-toe stiletto heels, seated by the sea" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Heels</span>
+            <h3 class="product-card__name">Pointed Stiletto Heels</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Pointed Stiletto Heels" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Pointed Stiletto Heels on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/suede-court-pumps.jpg -->
+        <article class="product-card zoom-parent" data-category="heels" data-for="women" data-name="Suede Court Pumps Women · Heels">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-01.jpg" alt="Navy suede pumps held up by one hand against a soft city background" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Heels</span>
+            <h3 class="product-card__name">Suede Court Pumps</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Suede Court Pumps" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Suede Court Pumps on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/classic-black-pumps.jpg -->
+        <article class="product-card zoom-parent" data-category="heels" data-for="women" data-name="Classic Black Pumps Women · Heels">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-07.jpg" alt="Single black stiletto pump dangling from a hand on a white background" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Heels</span>
+            <h3 class="product-card__name">Classic Black Pumps</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Classic Black Pumps" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Classic Black Pumps on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/lace-up-block-heel-ankle-boots.jpg -->
+        <article class="product-card zoom-parent" data-category="boots" data-for="women" data-name="Lace-Up Block-Heel Ankle Boots Women · Boots">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-03.jpg" alt="Cream suede lace-up block-heel ankle boots beside a small mirror" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Boots</span>
+            <h3 class="product-card__name">Lace-Up Block-Heel Ankle Boots</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Lace-Up Block-Heel Ankle Boots" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Lace-Up Block-Heel Ankle Boots on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/patent-ankle-boots.jpg -->
+        <article class="product-card zoom-parent" data-category="boots heels" data-for="women" data-name="Patent Ankle Boots Women · Boots">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-05.jpg" alt="Nude patent pointed-toe ankle boots with side zips" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Boots</span>
+            <h3 class="product-card__name">Patent Ankle Boots</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Patent Ankle Boots" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Patent Ankle Boots on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/heeled-leather-ankle-boots.jpg -->
+        <article class="product-card zoom-parent" data-category="boots" data-for="women" data-name="Heeled Leather Ankle Boots Women · Boots">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-06.jpg" alt="Tan leather heeled ankle boots worn with black trousers" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Boots</span>
+            <h3 class="product-card__name">Heeled Leather Ankle Boots</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Heeled Leather Ankle Boots" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Heeled Leather Ankle Boots on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Sample listing — replace image with assets/images/products/cross-strap-platform-sandals.jpg -->
+        <article class="product-card zoom-parent" data-category="sandals" data-for="women" data-name="Cross-Strap Platform Sandals Women · Sandals">
+          <div class="product-card__img zoom">
+            <img src="assets/images/placeholders/lookbook-04.jpg" alt="Burgundy leather cross-strap platform sandals on a blush backdrop" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="product-card__body">
+            <span class="tag">Women &middot; Sandals</span>
+            <h3 class="product-card__name">Cross-Strap Platform Sandals</h3>
+            <p class="price-note">Price on request</p>
+            <a class="btn btn-primary btn-sm mt-3" href="https://wa.me/918408821319" data-wa-product="Cross-Strap Platform Sandals" target="_blank" rel="noopener noreferrer">
+              <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Enquire<span class="sr-only"> about Cross-Strap Platform Sandals on WhatsApp (opens in a new tab)</span>
+            </a>
+          </div>
+        </article>
+        <!-- Enquiry card: shown until photos of the ethnic range are added as product cards -->
+        <article class="enquiry-card" data-category="ethnic loafers" data-for="all" data-enquiry data-name="Ethnic footwear mojari jutti kolhapuri festive wedding">
+          <p class="eyebrow eyebrow--light">Ethnic Footwear</p>
+          <h3>Festive and traditional styles for men and women</h3>
+          <p class="text-[14px]">Our ethnic range is not photographed here yet. Message us to see the styles currently in store.</p>
+          <a class="btn btn-cream btn-sm" href="https://wa.me/918408821319" data-wa-product="ethnic footwear range" target="_blank" rel="noopener noreferrer">
+            <svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Ask on WhatsApp<span class="sr-only"> (opens in a new tab)</span>
+          </a>
+        </article>
+      </div>
+
+      <div class="text-center py-16" data-catalog-empty hidden>
+        <p class="font-display text-2xl text-espresso">No styles match those filters.</p>
+        <p class="text-muted mt-2">Try another category, or ask us directly. We may have it in store.</p>
+        <div class="mt-6 flex flex-wrap justify-center gap-3">
+          <button type="button" class="btn btn-secondary" data-catalog-reset>Show All Styles</button>
+          <a class="btn btn-primary" href="https://wa.me/918408821319" data-wa-product="a style I couldn't find on the website" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Ask on WhatsApp</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CAN'T FIND IT?
+       ==================================================================== -->
+  <section class="section bg-beige" aria-labelledby="help-title">
+    <div class="wrap grid lg:grid-cols-[1.2fr_1fr] gap-10 lg:gap-16 items-center">
+      <div class="reveal min-w-0">
+        <p class="eyebrow">Personal Help</p>
+        <h2 id="help-title" class="section-title mt-4">Looking for Something Specific?</h2>
+        <p class="section-lede mt-5">Send us a photo of the style you have in mind, along with your size and the occasion. We'll tell you what we have that fits.</p>
+        <div class="mt-8 flex flex-wrap gap-3">
+          <a class="btn btn-primary" href="https://wa.me/918408821319" data-wa-product="a specific style" target="_blank" rel="noopener noreferrer"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg> Message on WhatsApp<span class="sr-only"> (opens in a new tab)</span></a>
+          <a class="btn btn-secondary" href="contact.html">Contact Us</a>
+        </div>
+      </div>
+      <ol class="steps reveal" style="grid-template-columns: 1fr;">
+        <li class="step py-6">
+          <h3 class="step__title">Pick a style</h3>
+          <p class="text-muted text-[15px] mt-2">Note its name from this page, or screenshot it.</p>
+        </li>
+        <li class="step py-6">
+          <h3 class="step__title">Message us with your size</h3>
+          <p class="text-muted text-[15px] mt-2">WhatsApp +91 8408821319.</p>
+        </li>
+        <li class="step py-6">
+          <h3 class="step__title">We confirm the details</h3>
+          <p class="text-muted text-[15px] mt-2">Availability, price and shipping across India.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================================================================
+     SHARED: FOOTER  (copy unchanged to every page)
+     ====================================================================== -->
+<footer class="site-footer" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Site footer</h2>
+
+  <!-- Newsletter (front-end demo — not connected to a mailing list) -->
+  <div class="wrap py-14 md:py-16 grid lg:grid-cols-2 gap-8 items-center border-b footer-rule">
+    <div>
+      <p class="font-display text-cream text-3xl md:text-[2.2rem] leading-tight">Stay in Style</p>
+      <p class="mt-3 max-w-md">Be the first to discover our latest footwear collections and updates.</p>
+    </div>
+    <form class="w-full" data-newsletter novalidate>
+      <label for="newsletter-email" class="sr-only">Email address</label>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input id="newsletter-email" name="email" type="email" class="field" placeholder="Your email address" autocomplete="email" aria-describedby="newsletter-msg">
+        <button type="submit" class="btn btn-cream shrink-0">Subscribe</button>
+      </div>
+      <p id="newsletter-msg" class="form-msg mt-3" role="status"></p>
+    </form>
+  </div>
+
+  <div class="wrap py-14 md:py-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_0.9fr_1.2fr]">
+    <!-- Column 1: Brand -->
+    <div class="min-w-0">
+      <!-- Official AF mark, cream version for dark backgrounds (assets/images/asnani-logo-light.png) -->
+      <a href="index.html" class="logo-lockup logo-lockup--footer" aria-label="Asnani Footwear — home">
+        <img src="assets/images/asnani-logo-light.png" alt="" class="logo-mark" width="174" height="100">
+        <span class="logo logo--light" aria-hidden="true">
+          <span class="logo__name">ASNANI</span>
+          <span class="logo__sub">FOOTWEAR</span>
+        </span>
+      </a>
+      <p class="mt-6 max-w-xs">Discover stylish and comfortable footwear for every occasion. Explore the world of Asnani Footwear and find your perfect pair.</p>
+      <div class="mt-6 flex gap-3">
+        <a class="social" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="Asnani Footwear on Instagram (opens in a new tab)"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a class="social" href="https://wa.me/918408821319" target="_blank" rel="noopener noreferrer" aria-label="Chat with Asnani Footwear on WhatsApp (opens in a new tab)"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+        <!-- FACEBOOK: replace this <span> with
+             <a class="social" href="OFFICIAL_FACEBOOK_URL" target="_blank" rel="noopener noreferrer" aria-label="Asnani Footwear on Facebook (opens in a new tab)">…</a>
+             once the official page URL is provided. -->
+        <span class="social social--pending" role="img" aria-label="Facebook page link coming soon" title="Facebook page link coming soon"><svg aria-hidden="true"><use href="#i-facebook"/></svg></span>
+      </div>
+    </div>
+
+    <!-- Column 2: Quick links -->
+    <nav aria-label="Quick links">
+      <h3>Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Collections</a></li>
+        <li><a href="gallery.html">Lookbook</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Column 3: Collections -->
+    <nav aria-label="Collections">
+      <h3>Collections</h3>
+      <ul class="footer-list">
+        <li><a href="products.html#formal">Formal Leather</a></li>
+        <li><a href="products.html#sneakers">Casual Shoes</a></li>
+        <li><a href="products.html#sneakers">Sneakers</a></li>
+        <li><a href="products.html#loafers">Loafers</a></li>
+        <li><a href="products.html#boots">Boots</a></li>
+        <li><a href="products.html#women">Women's Footwear</a></li>
+      </ul>
+    </nav>
+
+    <!-- Column 4: Contact -->
+    <div class="min-w-0">
+      <h3>Visit &amp; Contact</h3>
+      <address class="not-italic space-y-4">
+        <p><span class="text-cream font-medium">Asnani Footwear</span><br>Main Road, Janta Chowk, Jaripatka,<br>Nagpur, Maharashtra – 440014</p>
+        <p>WhatsApp: <a href="https://wa.me/918408821319" target="_blank" rel="noopener noreferrer" class="text-cream underline decoration-gold/50 underline-offset-4 select-all">+91 8408821319</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" class="text-cream underline decoration-gold/50 underline-offset-4">@asnani_footwear</a></p>
+      </address>
+    </div>
+  </div>
+
+  <div class="border-t footer-rule">
+    <div class="wrap py-6 flex flex-col sm:flex-row gap-2 sm:justify-between text-[13px] text-cream/60">
+      <p>© <span data-year>2026</span> Asnani Footwear. All Rights Reserved.</p>
+      <p class="font-accent italic text-[15px] text-gold/90">Designed with Style.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================================
+     SHARED: FLOATING WHATSAPP BUTTON
+     ====================================================================== -->
+<a class="wa-float" href="https://wa.me/918408821319?text=Hello%20Asnani%20Footwear!%20I%20would%20like%20to%20know%20more%20about%20your%20footwear%20collection." target="_blank" rel="noopener noreferrer" aria-label="Chat with Asnani Footwear on WhatsApp (opens in a new tab)">
+  <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  <span class="wa-float__label">Chat on WhatsApp</span>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
