@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Asnani Footwear | Premium Footwear for Men &amp; Women</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Discover stylish footwear for men and women at Asnani Footwear, Nagpur. Explore formal shoes, sneakers, loafers, boots, and more. Contact us for orders and enquiries.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Asnani Footwear | Premium Footwear for Men &amp; Women">
+<meta property="og:description" content="Discover stylish footwear for men and women at Asnani Footwear, Nagpur. Explore formal shoes, sneakers, loafers, boots, and more.">
+<meta property="og:image" content="assets/images/placeholders/hero.jpg">
+<meta name="theme-color" content="#241A17">
+<link rel="icon" type="image/png" href="assets/images/asnani-logo.png">
+
+<!-- Fonts: Playfair Display (headings), Inter (body), Cormorant Garamond (accent) -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap">
+
+<!-- Tailwind CSS (CDN, prototype only — swap for a compiled build in production) -->
+<script src="https://cdn.tailwindcss.com/3.4.17"></script>
+<script>
+  tailwind.config = {
+    corePlugins: { preflight: true },
+    theme: {
+      extend: {
+        colors: {
+          espresso: "#241A17", brown: "#39271F", tan: "#B68A5A", gold: "#C6A46A",
+          cream: "#F8F5EF", beige: "#EDE5DA", warmgrey: "#8B8580", ink: "#191716",
+          muted: "#5F5751", "tan-deep": "#8A6740", line: "#E3D9CB"
+        },
+        fontFamily: {
+          display: ['"Playfair Display"', '"Cormorant Garamond"', "Georgia", "serif"],
+          accent: ['"Cormorant Garamond"', "Georgia", "serif"],
+          sans: ["Inter", "system-ui", "-apple-system", '"Segoe UI"', "Roboto", "sans-serif"]
+        }
+      }
+    }
+  };
+</script>
+
+<!-- Shared design system (header, footer, buttons, cards, tokens) -->
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body data-page="index">
+
+<!-- ======================================================================
+     ICON SPRITE (Lucide-style outlines + brand glyphs). Reuse on every page.
+     ====================================================================== -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+  <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
+  <symbol id="i-chev-left" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></symbol>
+  <symbol id="i-chev-right" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></symbol>
+  <symbol id="i-facebook" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413Z"/></symbol>
+  <symbol id="i-gem" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12l4 6-10 13L2 9Z"/><path d="M11 3 8 9l4 13 4-13-3-6"/><path d="M2 9h20"/></symbol>
+  <symbol id="i-badge" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-footprints" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16v-2.38C4 11.5 2.97 10.5 3 8c.03-2.72 1.49-6 4.5-6C9.37 2 10 3.8 10 5.5c0 3.11-2 5.66-2 8.68V16a2 2 0 1 1-4 0Z"/><path d="M20 20v-2.38c0-2.12 1.03-3.12 1-5.62-.03-2.72-1.49-6-4.5-6C14.63 6 14 7.8 14 9.5c0 3.11 2 5.66 2 8.68V20a2 2 0 1 0 4 0Z"/><path d="M16 17h4"/><path d="M4 13h4"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/><path d="M15 18H9"/><path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/><circle cx="17" cy="18" r="2"/><circle cx="7" cy="18" r="2"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></symbol>
+</svg>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ======================================================================
+     SHARED: ANNOUNCEMENT BAR  (copy unchanged to every page)
+     ====================================================================== -->
+<div class="announce" role="region" aria-label="Store announcements">
+  <div class="announce__track">
+    <p class="announce__msg is-active">Step Into Style<span class="sep" aria-hidden="true">|</span>Quality Footwear for Every Occasion</p>
+    <p class="announce__msg" aria-hidden="true">Discover Your Perfect Pair</p>
+    <p class="announce__msg" aria-hidden="true">Style Meets Comfort at Asnani Footwear</p>
+    <p class="announce__msg" aria-hidden="true">Pan-India Shipping Available</p>
+  </div>
+</div>
+
+<!-- ======================================================================
+     SHARED: HEADER & NAVIGATION  (copy unchanged to every page —
+     main.js highlights the current page automatically)
+     ====================================================================== -->
+<header class="site-header">
+  <div class="wrap flex items-center justify-between gap-6 h-[76px] lg:h-[84px]">
+    <!-- Official AF mark (assets/images/asnani-logo.png) with the wordmark beside it -->
+    <a href="index.html" class="logo-lockup" aria-label="Asnani Footwear — home">
+      <img src="assets/images/asnani-logo.png" alt="" class="logo-mark" width="174" height="100">
+      <span class="logo" aria-hidden="true">
+        <span class="logo__name">ASNANI</span>
+        <span class="logo__sub">FOOTWEAR</span>
+      </span>
+    </a>
+
+    <nav aria-label="Main" class="hidden lg:block">
+      <ul class="flex items-center gap-9">
+        <li><a class="nav-link" data-nav href="index.html" aria-current="page">Home</a></li>
+        <li><a class="nav-link" data-nav href="about.html">About Us</a></li>
+        <li><a class="nav-link" data-nav href="products.html">Collections</a></li>
+        <li><a class="nav-link" data-nav href="gallery.html">Lookbook</a></li>
+        <li><a class="nav-link" data-nav href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <a href="products.html" class="btn btn-primary btn-sm">Shop Now</a>
+      <button type="button" class="menu-toggle lg:hidden" data-menu-toggle aria-controls="mobile-menu" aria-expanded="false" aria-label="Open menu">
+        <span class="bars" aria-hidden="true"><span class="bar"></span><span class="bar"></span><span class="bar"></span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile slide-down navigation -->
+  <div id="mobile-menu" class="mobile-menu lg:hidden">
+    <div class="mobile-menu__inner">
+      <nav aria-label="Mobile" class="wrap pb-6 pt-2">
+        <a class="m-link" data-nav href="index.html" aria-current="page">Home <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="about.html">About Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="products.html">Collections <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="gallery.html">Lookbook <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="m-link" data-nav href="contact.html">Contact <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="products.html" class="btn btn-primary w-full mt-6">Shop Now <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ====================================================================
+       HERO
+       ==================================================================== -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <!-- Temporary Unsplash image (photo-1533867617858). Replace with brand photography,
+           e.g. assets/images/brand/hero.jpg -->
+      <img src="assets/images/placeholders/hero.jpg"
+           alt="Pair of polished brown leather monk-strap shoes on a wooden floor in warm, low light"
+           width="2000" height="1150" fetchpriority="high">
+    </div>
+    <div class="hero__shade" aria-hidden="true"></div>
+
+    <div class="wrap hero__inner">
+      <div class="max-w-2xl">
+        <p class="eyebrow eyebrow--light rise rise-1"><span>Asnani Footwear <span aria-hidden="true">|</span> Step Into Elegance</span></p>
+        <h1 id="hero-title" class="hero__title mt-6 rise rise-2">Every Step Tells <em>Your&nbsp;Story.</em></h1>
+        <p class="hero__lede mt-6 rise rise-3">Discover footwear that brings together timeless style, everyday comfort, and exceptional quality.</p>
+        <div class="mt-9 flex flex-wrap gap-3 rise rise-4">
+          <a href="products.html" class="btn btn-cream">Explore Collection <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          <a href="about.html" class="btn btn-ghost-light">Discover Our Story</a>
+        </div>
+        <p class="hero__meta mt-10 flex items-center gap-2 rise rise-4">
+          <svg class="w-4 h-4 text-gold shrink-0" aria-hidden="true"><use href="#i-pin"/></svg>
+          Janta Chowk, Jaripatka &middot; Nagpur
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FEATURED CATEGORIES
+       ==================================================================== -->
+  <section class="section bg-white" aria-labelledby="cat-title">
+    <div class="wrap">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14 reveal">
+        <div>
+          <p class="eyebrow">Shop by Category</p>
+          <h2 id="cat-title" class="section-title mt-4">Find Your Perfect Pair</h2>
+        </div>
+        <p class="section-lede md:text-right">From timeless classics to everyday essentials, explore footwear that complements every step of your journey.</p>
+      </div>
+
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-5 reveal">
+        <!-- Category 1 — replace image with assets/images/products/category-formal.jpg -->
+        <a href="products.html#formal" class="cat-card zoom-parent" aria-label="Explore Formal Leather footwear">
+          <div class="cat-card__img zoom">
+            <img src="assets/images/placeholders/cat-formal.jpg" alt="Brown leather brogue shoes with wingtip detailing, seen from above" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="cat-card__body">
+            <h3 class="cat-card__title">Formal Leather</h3>
+            <p class="cat-card__desc">Refined footwear for timeless sophistication.</p>
+            <span class="link-arrow">Explore Category <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Category 2 — replace image with assets/images/products/category-casual.jpg -->
+        <a href="products.html#sneakers" class="cat-card zoom-parent" aria-label="Explore Casual and Sneakers footwear">
+          <div class="cat-card__img zoom">
+            <img src="assets/images/placeholders/cat-casual.jpg" alt="White and tan casual sneaker against a warm orange backdrop" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="cat-card__body">
+            <h3 class="cat-card__title">Casual &amp; Sneakers</h3>
+            <p class="cat-card__desc">Everyday comfort with effortless style.</p>
+            <span class="link-arrow">Explore Category <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Category 3 — replace image with assets/images/products/category-ethnic-loafers.jpg -->
+        <a href="products.html#loafers" class="cat-card zoom-parent" aria-label="Explore Ethnic and Loafers footwear">
+          <div class="cat-card__img zoom">
+            <img src="assets/images/placeholders/cat-ethnic-loafers.jpg" alt="Teal suede slip-on shoe with brogue detailing on a soft pastel set" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="cat-card__body">
+            <h3 class="cat-card__title">Ethnic &amp; Loafers</h3>
+            <p class="cat-card__desc">Classic elegance for special moments and everyday style.</p>
+            <span class="link-arrow">Explore Category <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+
+        <!-- Category 4 — replace image with assets/images/products/category-boots.jpg -->
+        <a href="products.html#boots" class="cat-card zoom-parent" aria-label="Explore Boots and Statement Styles">
+          <div class="cat-card__img zoom">
+            <img src="assets/images/placeholders/cat-boots.jpg" alt="Pair of dark brown leather lace-up boots on a light surface" width="800" height="1000" loading="lazy">
+          </div>
+          <div class="cat-card__body">
+            <h3 class="cat-card__title">Boots &amp; Statement Styles</h3>
+            <p class="cat-card__desc">Make every step stand out.</p>
+            <span class="link-arrow">Explore Category <svg aria-hidden="true"><use href="#i-arrow"/></svg></span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       WHY CHOOSE ASNANI
+       ==================================================================== -->
+  <section class="section bg-cream border-y border-line" aria-labelledby="why-title">
+    <div class="wrap">
+      <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 reveal">
+        <p class="eyebrow justify-center">The Asnani Promise</p>
+        <h2 id="why-title" class="section-title mt-4">Why Choose Asnani Footwear?</h2>
+        <p class="section-lede mx-auto mt-4">More than footwear. A perfect balance of style, comfort, and quality.</p>
+      </div>
+
+      <ul class="grid grid-cols-1 min-[480px]:grid-cols-2 lg:grid-cols-4 gap-y-10 lg:gap-y-0 lg:divide-x lg:divide-line reveal">
+        <li class="benefit flex flex-col items-center text-center px-4 lg:px-8">
+          <span class="benefit__icon"><svg aria-hidden="true"><use href="#i-gem"/></svg></span>
+          <h3 class="font-display text-xl text-espresso mt-5">Premium Selection</h3>
+          <p class="text-muted text-[15px] mt-2 max-w-[17rem]">Thoughtfully selected footwear for style-conscious individuals.</p>
+        </li>
+        <li class="benefit flex flex-col items-center text-center px-4 lg:px-8">
+          <span class="benefit__icon"><svg aria-hidden="true"><use href="#i-badge"/></svg></span>
+          <h3 class="font-display text-xl text-espresso mt-5">Quality Craftsmanship</h3>
+          <p class="text-muted text-[15px] mt-2 max-w-[17rem]">Footwear selected with attention to materials, finish, and detail.</p>
+        </li>
+        <li class="benefit flex flex-col items-center text-center px-4 lg:px-8">
+          <span class="benefit__icon"><svg aria-hidden="true"><use href="#i-footprints"/></svg></span>
+          <h3 class="font-display text-xl text-espresso mt-5">Everyday Comfort</h3>
+          <p class="text-muted text-[15px] mt-2 max-w-[17rem]">Styles designed to complement your everyday lifestyle.</p>
+        </li>
+        <li class="benefit flex flex-col items-center text-center px-4 lg:px-8">
+          <span class="benefit__icon"><svg aria-hidden="true"><use href="#i-truck"/></svg></span>
+          <h3 class="font-display text-xl text-espresso mt-5">Pan-India Shipping</h3>
+          <p class="text-muted text-[15px] mt-2 max-w-[17rem]">Shop from anywhere in India with shipping options available across the country.</p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       BRAND INTRODUCTION
+       ==================================================================== -->
+  <section class="section bg-beige overflow-hidden" aria-labelledby="intro-title">
+    <div class="wrap grid lg:grid-cols-2 gap-14 lg:gap-20 items-center">
+      <div class="frame reveal mr-[10px] sm:mr-[18px]">
+        <!-- Temporary Unsplash image. Replace with a photo of the Asnani Footwear store:
+             assets/images/brand/showroom.jpg -->
+        <img src="assets/images/placeholders/showroom.jpg" alt="Warmly lit boutique interior with wooden shelving and displayed merchandise" width="1000" height="1200" loading="lazy" class="w-full aspect-[5/6] object-cover">
+      </div>
+      <div class="reveal min-w-0">
+        <p class="eyebrow">The Asnani Experience</p>
+        <h2 id="intro-title" class="section-title mt-4">Where Style Meets Every&nbsp;Step.</h2>
+        <div class="mt-7 space-y-5 text-muted text-[16.5px] max-w-[36rem]">
+          <p>At Asnani Footwear, we believe that the right pair of shoes does more than complete an outfit. It adds confidence, comfort, and personality to every step. As a family footwear business, we bring together a diverse selection of footwear for men and women, helping you find styles that suit your everyday life and special occasions.</p>
+          <p>From timeless formal shoes to contemporary sneakers and elegant ethnic styles, discover footwear that reflects your individuality.</p>
+        </div>
+        <p class="font-accent italic text-2xl text-brown mt-8">For men &amp; women &middot; Nagpur, Maharashtra</p>
+        <a href="about.html" class="btn btn-primary mt-8">Get to Know Us <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       FEATURED PRODUCTS PREVIEW
+       Sample cards only — no prices, sizes or stock are shown until the
+       catalogue (products.html) is built with real product data.
+       ==================================================================== -->
+  <section class="section bg-white" aria-labelledby="products-title">
+    <div class="wrap">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-14 reveal">
+        <div>
+          <p class="eyebrow">Featured</p>
+          <h2 id="products-title" class="section-title mt-4">Explore Our Collections</h2>
+          <p class="section-lede mt-4">Find styles that feel as good as they look.</p>
+        </div>
+        <a href="products.html" class="btn btn-secondary self-start md:self-auto">View All Collections <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+
+      <div class="grid grid-cols-1 min-[460px]:grid-cols-2 lg:grid-cols-4 gap-5 sm:gap-6 reveal">
+        <!-- Product 1 — replace with assets/images/products/classic-leather-formal.jpg -->
+        <article class="product-card zoom-parent">
+          <a href="products.html#formal" class="product-card__img zoom block" tabindex="-1" aria-hidden="true">
+            <img src="assets/images/placeholders/product-formal.jpg" alt="Polished tan leather derby shoes on wooden flooring" width="800" height="1000" loading="lazy">
+          </a>
+          <div class="p-5 flex flex-col gap-2 flex-1">
+            <span class="tag">Men &middot; Formal</span>
+            <h3 class="font-display text-[1.2rem] leading-snug text-espresso">Classic Leather Formal Shoes</h3>
+            <p class="text-sm text-muted">Price on request</p>
+            <a href="products.html#formal" class="link-arrow text-brown mt-auto pt-3">View Collection <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Product 2 — replace with assets/images/products/everyday-casual-sneakers.jpg -->
+        <article class="product-card zoom-parent">
+          <a href="products.html#sneakers" class="product-card__img zoom block" tabindex="-1" aria-hidden="true">
+            <img src="assets/images/placeholders/product-sneakers.jpg" alt="Black knit running-style sneaker on a plain white background" width="800" height="1000" loading="lazy">
+          </a>
+          <div class="p-5 flex flex-col gap-2 flex-1">
+            <span class="tag">Unisex &middot; Sneakers</span>
+            <h3 class="font-display text-[1.2rem] leading-snug text-espresso">Everyday Casual Sneakers</h3>
+            <p class="text-sm text-muted">Price on request</p>
+            <a href="products.html#sneakers" class="link-arrow text-brown mt-auto pt-3">View Collection <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Product 3 — replace with assets/images/products/premium-mens-loafers.jpg -->
+        <article class="product-card zoom-parent">
+          <a href="products.html#loafers" class="product-card__img zoom block" tabindex="-1" aria-hidden="true">
+            <img src="assets/images/placeholders/product-loafers.jpg" alt="Cognac leather horsebit loafers on a dark blue backdrop" width="800" height="1000" loading="lazy">
+          </a>
+          <div class="p-5 flex flex-col gap-2 flex-1">
+            <span class="tag">Men &middot; Loafers</span>
+            <h3 class="font-display text-[1.2rem] leading-snug text-espresso">Premium Men's Loafers</h3>
+            <p class="text-sm text-muted">Price on request</p>
+            <a href="products.html#loafers" class="link-arrow text-brown mt-auto pt-3">View Collection <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+
+        <!-- Product 4 — replace with assets/images/products/elegant-womens-footwear.jpg -->
+        <article class="product-card zoom-parent">
+          <a href="products.html#women" class="product-card__img zoom block" tabindex="-1" aria-hidden="true">
+            <img src="assets/images/placeholders/product-women.jpg" alt="Woman wearing black pointed-toe stiletto heels, seated by the sea" width="800" height="1000" loading="lazy">
+          </a>
+          <div class="p-5 flex flex-col gap-2 flex-1">
+            <span class="tag">Women &middot; Heels</span>
+            <h3 class="font-display text-[1.2rem] leading-snug text-espresso">Elegant Women's Footwear</h3>
+            <p class="text-sm text-muted">Price on request</p>
+            <a href="products.html#women" class="link-arrow text-brown mt-auto pt-3">View Collection <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       INSTAGRAM LOOKBOOK (3x3)
+       Tiles 01–04 are real posts from @asnani_footwear (cropped from profile
+       screenshots; swap in the original photos for sharper images).
+       Tiles 05–09 are still temporary Unsplash photos: save more posts as
+       assets/images/instagram/post-05.jpg … post-09.jpg and change each src.
+       ==================================================================== -->
+  <section class="section bg-cream" aria-labelledby="lookbook-title">
+    <div class="wrap">
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12 reveal">
+        <div>
+          <p class="eyebrow">Instagram Lookbook</p>
+          <h2 id="lookbook-title" class="section-title mt-4">Style That Speaks for Itself</h2>
+          <p class="section-lede mt-4">Follow our latest styles, collections, and footwear inspiration.</p>
+        </div>
+        <a href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 text-espresso self-start md:self-auto group">
+          <svg class="w-6 h-6 text-tan" aria-hidden="true"><use href="#i-instagram"/></svg>
+          <span class="font-display text-2xl group-hover:text-tan-deep transition-colors">@asnani_footwear</span>
+          <span class="sr-only">(opens Instagram in a new tab)</span>
+        </a>
+      </div>
+
+      <div class="grid grid-cols-2 sm:grid-cols-3 gap-1.5 sm:gap-2 reveal">
+        <!-- POST 01 (real post from @asnani_footwear) -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/instagram/post-01.jpg" alt="Inside the Asnani Footwear store in Nagpur: a woman browsing a lit wall of women's sandals and heels" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- POST 02 (real post from @asnani_footwear) -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/instagram/post-02.jpg" alt="Five pairs of clog-style sandals in white, black, grey, beige and lilac, decorated with colourful charms" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- POST 03 (real post from @asnani_footwear) -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/instagram/post-03.jpg" alt="Grey platform clogs with cartoon charms on a store display" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- POST 04 (real post from @asnani_footwear) -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/instagram/post-04.jpg" alt="Embossed handbags in sage green and lilac displayed on store shelves" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- [UPLOAD INSTAGRAM POST 05 HERE] → assets/images/instagram/post-05.jpg -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/placeholders/lookbook-05.jpg" alt="Nude patent pointed-toe ankle boots with side zips" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- [UPLOAD INSTAGRAM POST 06 HERE] → assets/images/instagram/post-06.jpg -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/placeholders/lookbook-06.jpg" alt="Tan leather heeled ankle boots worn with black trousers" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- [UPLOAD INSTAGRAM POST 07 HERE] → assets/images/instagram/post-07.jpg -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/placeholders/lookbook-07.jpg" alt="Single black stiletto pump dangling from a hand on a white background" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- [UPLOAD INSTAGRAM POST 08 HERE] → assets/images/instagram/post-08.jpg -->
+        <a class="ig-tile" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/placeholders/lookbook-08.jpg" alt="White mesh sneaker worn on a city street" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+        <!-- [UPLOAD INSTAGRAM POST 09 HERE] → assets/images/instagram/post-09.jpg -->
+        <a class="ig-tile ig-tile--wide" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="View @asnani_footwear on Instagram">
+          <img src="assets/images/placeholders/lookbook-09.jpg" alt="Pair of white low-top sneakers on a black background" width="700" height="700" loading="lazy">
+          <span class="ig-tile__overlay" aria-hidden="true"><svg><use href="#i-instagram"/></svg>View on Instagram</span>
+        </a>
+      </div>
+
+      <div class="mt-10 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-5 reveal">
+        <p class="text-[13px] text-muted">The first four photos are from our Instagram. The rest are preview images until more posts are added.</p>
+        <a href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" class="btn btn-primary self-start sm:self-auto">
+          <svg aria-hidden="true"><use href="#i-instagram"/></svg> Follow @asnani_footwear
+          <span class="sr-only">(opens in a new tab)</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       TESTIMONIALS (sample content — replace with verified feedback)
+       ==================================================================== -->
+  <section class="section bg-beige" aria-labelledby="reviews-title">
+    <div class="wrap" data-carousel>
+      <div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 mb-10 md:mb-12 reveal">
+        <div>
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="reviews-title" class="section-title mt-4">Kind Words From Our Customers</h2>
+          <p class="section-lede mt-4">Every pair has a story. Here's what our customers appreciate.</p>
+        </div>
+        <div class="flex items-center gap-4" data-carousel-controls>
+          <span class="text-sm text-muted tabular-nums" data-carousel-status aria-live="polite"></span>
+          <button type="button" class="icon-btn" data-prev aria-label="Previous testimonial"><svg aria-hidden="true"><use href="#i-chev-left"/></svg></button>
+          <button type="button" class="icon-btn" data-next aria-label="Next testimonial"><svg aria-hidden="true"><use href="#i-chev-right"/></svg></button>
+        </div>
+      </div>
+
+      <div class="carousel reveal" tabindex="0" role="region" aria-label="Sample testimonials">
+        <figure class="quote-card">
+          <div class="stars" role="img" aria-label="Five out of five stars (sample)">★★★★★</div>
+          <blockquote>“Beautiful collection and stylish footwear. The variety makes it easy to find something for every occasion.”</blockquote>
+          <figcaption class="mt-auto flex flex-col gap-3">
+            <span class="font-semibold text-espresso text-[15px]">Sample Customer 01</span>
+            <span class="demo-label">Sample testimonial — replace with verified customer feedback.</span>
+          </figcaption>
+        </figure>
+        <figure class="quote-card">
+          <div class="stars" role="img" aria-label="Five out of five stars (sample)">★★★★★</div>
+          <blockquote>“Comfortable styles and a lovely selection. A great place to explore footwear.”</blockquote>
+          <figcaption class="mt-auto flex flex-col gap-3">
+            <span class="font-semibold text-espresso text-[15px]">Sample Customer 02</span>
+            <span class="demo-label">Sample testimonial — replace with verified customer feedback.</span>
+          </figcaption>
+        </figure>
+        <figure class="quote-card">
+          <div class="stars" role="img" aria-label="Five out of five stars (sample)">★★★★★</div>
+          <blockquote>“Really nice footwear options with elegant designs. I enjoyed exploring the collection.”</blockquote>
+          <figcaption class="mt-auto flex flex-col gap-3">
+            <span class="font-semibold text-espresso text-[15px]">Sample Customer 03</span>
+            <span class="demo-label">Sample testimonial — replace with verified customer feedback.</span>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====================================================================
+       CALL TO ACTION
+       ==================================================================== -->
+  <section class="cta-band" aria-labelledby="cta-title">
+    <div class="cta-band__media" aria-hidden="true">
+      <!-- Temporary Unsplash image. Replace with assets/images/brand/cta.jpg -->
+      <img src="assets/images/placeholders/cta-bg.jpg" alt="" width="1800" height="900" loading="lazy">
+    </div>
+    <div class="wrap py-20 md:py-28 grid lg:grid-cols-[1.4fr_1fr] gap-10 items-end">
+      <div class="reveal">
+        <p class="eyebrow eyebrow--light">Your Next Chapter</p>
+        <h2 id="cta-title" class="font-display text-cream mt-5 text-[clamp(2.2rem,5vw,3.9rem)] leading-[1.08] font-medium">Your Next Favourite Pair <em class="text-gold font-normal">Awaits.</em></h2>
+        <p class="mt-5 text-cream/80 max-w-xl text-[17px]">Explore footwear that complements your style and keeps you moving with confidence.</p>
+      </div>
+      <div class="flex flex-wrap gap-3 lg:justify-end reveal">
+        <a href="products.html" class="btn btn-cream">Shop the Collection <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a href="contact.html" class="btn btn-ghost-light">Connect With Us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ======================================================================
+     SHARED: FOOTER  (copy unchanged to every page)
+     ====================================================================== -->
+<footer class="site-footer" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Site footer</h2>
+
+  <!-- Newsletter (front-end demo — not connected to a mailing list) -->
+  <div class="wrap py-14 md:py-16 grid lg:grid-cols-2 gap-8 items-center border-b footer-rule">
+    <div>
+      <p class="font-display text-cream text-3xl md:text-[2.2rem] leading-tight">Stay in Style</p>
+      <p class="mt-3 max-w-md">Be the first to discover our latest footwear collections and updates.</p>
+    </div>
+    <form class="w-full" data-newsletter novalidate>
+      <label for="newsletter-email" class="sr-only">Email address</label>
+      <div class="flex flex-col sm:flex-row gap-3">
+        <input id="newsletter-email" name="email" type="email" class="field" placeholder="Your email address" autocomplete="email" aria-describedby="newsletter-msg">
+        <button type="submit" class="btn btn-cream shrink-0">Subscribe</button>
+      </div>
+      <p id="newsletter-msg" class="form-msg mt-3" role="status"></p>
+    </form>
+  </div>
+
+  <div class="wrap py-14 md:py-16 grid gap-12 sm:grid-cols-2 lg:grid-cols-[1.3fr_0.8fr_0.9fr_1.2fr]">
+    <!-- Column 1: Brand -->
+    <div class="min-w-0">
+      <!-- Official AF mark, cream version for dark backgrounds (assets/images/asnani-logo-light.png) -->
+      <a href="index.html" class="logo-lockup logo-lockup--footer" aria-label="Asnani Footwear — home">
+        <img src="assets/images/asnani-logo-light.png" alt="" class="logo-mark" width="174" height="100">
+        <span class="logo logo--light" aria-hidden="true">
+          <span class="logo__name">ASNANI</span>
+          <span class="logo__sub">FOOTWEAR</span>
+        </span>
+      </a>
+      <p class="mt-6 max-w-xs">Discover stylish and comfortable footwear for every occasion. Explore the world of Asnani Footwear and find your perfect pair.</p>
+      <div class="mt-6 flex gap-3">
+        <a class="social" href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" aria-label="Asnani Footwear on Instagram (opens in a new tab)"><svg aria-hidden="true"><use href="#i-instagram"/></svg></a>
+        <a class="social" href="https://wa.me/918408821319" target="_blank" rel="noopener noreferrer" aria-label="Chat with Asnani Footwear on WhatsApp (opens in a new tab)"><svg aria-hidden="true"><use href="#i-whatsapp"/></svg></a>
+        <!-- FACEBOOK: replace this <span> with
+             <a class="social" href="OFFICIAL_FACEBOOK_URL" target="_blank" rel="noopener noreferrer" aria-label="Asnani Footwear on Facebook (opens in a new tab)">…</a>
+             once the official page URL is provided. -->
+        <span class="social social--pending" role="img" aria-label="Facebook page link coming soon" title="Facebook page link coming soon"><svg aria-hidden="true"><use href="#i-facebook"/></svg></span>
+      </div>
+    </div>
+
+    <!-- Column 2: Quick links -->
+    <nav aria-label="Quick links">
+      <h3>Quick Links</h3>
+      <ul class="footer-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="products.html">Collections</a></li>
+        <li><a href="gallery.html">Lookbook</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <!-- Column 3: Collections -->
+    <nav aria-label="Collections">
+      <h3>Collections</h3>
+      <ul class="footer-list">
+        <li><a href="products.html#formal">Formal Leather</a></li>
+        <li><a href="products.html#sneakers">Casual Shoes</a></li>
+        <li><a href="products.html#sneakers">Sneakers</a></li>
+        <li><a href="products.html#loafers">Loafers</a></li>
+        <li><a href="products.html#boots">Boots</a></li>
+        <li><a href="products.html#women">Women's Footwear</a></li>
+      </ul>
+    </nav>
+
+    <!-- Column 4: Contact -->
+    <div class="min-w-0">
+      <h3>Visit &amp; Contact</h3>
+      <address class="not-italic space-y-4">
+        <p><span class="text-cream font-medium">Asnani Footwear</span><br>Main Road, Janta Chowk, Jaripatka,<br>Nagpur, Maharashtra – 440014</p>
+        <p>WhatsApp: <a href="https://wa.me/918408821319" target="_blank" rel="noopener noreferrer" class="text-cream underline decoration-gold/50 underline-offset-4 select-all">+91 8408821319</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/asnani_footwear/" target="_blank" rel="noopener noreferrer" class="text-cream underline decoration-gold/50 underline-offset-4">@asnani_footwear</a></p>
+      </address>
+    </div>
+  </div>
+
+  <div class="border-t footer-rule">
+    <div class="wrap py-6 flex flex-col sm:flex-row gap-2 sm:justify-between text-[13px] text-cream/60">
+      <p>© <span data-year>2026</span> Asnani Footwear. All Rights Reserved.</p>
+      <p class="font-accent italic text-[15px] text-gold/90">Designed with Style.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ======================================================================
+     SHARED: FLOATING WHATSAPP BUTTON
+     ====================================================================== -->
+<a class="wa-float" href="https://wa.me/918408821319?text=Hello%20Asnani%20Footwear!%20I%20would%20like%20to%20know%20more%20about%20your%20footwear%20collection." target="_blank" rel="noopener noreferrer" aria-label="Chat with Asnani Footwear on WhatsApp (opens in a new tab)">
+  <svg aria-hidden="true"><use href="#i-whatsapp"/></svg>
+  <span class="wa-float__label">Chat on WhatsApp</span>
+</a>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
