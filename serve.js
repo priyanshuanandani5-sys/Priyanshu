@@ -24,6 +24,15 @@ http.createServer((req, res) => {
     res.end(data);
   });
 }).listen(port, () => {
-  console.log(`Asnani Footwear site running at http://localhost:${port}`);
-  console.log("Keep this window open while browsing. Press Ctrl+C to stop.");
+  console.log("");
+  console.log("  Asnani Footwear site is running.");
+  console.log("");
+  console.log(`  On this computer:        http://localhost:${port}`);
+  // Addresses other phones / laptops on the same Wi-Fi can use
+  const lan = Object.values(require("os").networkInterfaces()).flat()
+    .filter(a => a && a.family === "IPv4" && !a.internal && !a.address.startsWith("169.254."));
+  lan.forEach(a => console.log(`  On other devices (same Wi-Fi): http://${a.address}:${port}`));
+  if (!lan.length) console.log("  (Not connected to a network: other devices can't reach this computer.)");
+  console.log("");
+  console.log("  Keep this window open while browsing. Press Ctrl+C to stop.");
 });
