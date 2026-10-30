@@ -13,35 +13,14 @@
 <meta name="theme-color" content="#241A17">
 <link rel="icon" type="image/png" href="assets/images/asnani-logo.png">
 
-<!-- Fonts: Playfair Display (headings), Inter (body), Cormorant Garamond (accent) -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400;1,500&display=swap">
 
-<!-- Tailwind CSS (CDN, prototype only — swap for a compiled build in production) -->
-<script src="https://cdn.tailwindcss.com/3.4.17"></script>
-<script>
-  tailwind.config = {
-    corePlugins: { preflight: true },
-    theme: {
-      extend: {
-        colors: {
-          espresso: "#241A17", brown: "#39271F", tan: "#B68A5A", gold: "#C6A46A",
-          cream: "#F8F5EF", beige: "#EDE5DA", warmgrey: "#8B8580", ink: "#191716",
-          muted: "#5F5751", "tan-deep": "#8A6740", line: "#E3D9CB"
-        },
-        fontFamily: {
-          display: ['"Playfair Display"', '"Cormorant Garamond"', "Georgia", "serif"],
-          accent: ['"Cormorant Garamond"', "Georgia", "serif"],
-          sans: ["Inter", "system-ui", "-apple-system", '"Segoe UI"', "Roboto", "sans-serif"]
-        }
-      }
-    }
-  };
-</script>
 
+<!-- Fonts (self-hosted): Playfair Display, Inter, Cormorant Garamond -->
+<link rel="stylesheet" href="assets/css/fonts.css">
 <!-- Shared design system (header, footer, buttons, cards, tokens) -->
 <link rel="stylesheet" href="assets/css/style.css">
+<!-- Tailwind utilities, compiled for offline use (see note at top of the file) -->
+<link rel="stylesheet" href="assets/css/tailwind.css">
 </head>
 
 <body data-page="index">
